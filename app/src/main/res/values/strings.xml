@@ -40,7 +40,7 @@
 
     <!-- Charge limit -->
     <string name="limit_title">Charge limit</string>
-    <string name="limit_description">Get warned when the battery reaches the limit. Stopping at 80–85 % noticeably reduces battery wear.</string>
+    <string name="limit_description" formatted="false">Get warned when the battery reaches the limit. Stopping at 80–85 % noticeably reduces battery wear.</string>
     <string name="limit_notify">Notify me</string>
     <string name="limit_notify_hint">Runs a small offline monitor in the background.</string>
     <string name="limit_reached_banner">Limit %1$d %% reached — unplug</string>

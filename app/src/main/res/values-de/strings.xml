@@ -32,7 +32,7 @@
     <string name="label_current_history">Strom · letzte 60 s</string>
 
     <string name="limit_title">Ladelimit</string>
-    <string name="limit_description">Warnung, sobald der Akku das Limit erreicht. Bei 80–85 % aufzuhören schont den Akku spürbar.</string>
+    <string name="limit_description" formatted="false">Warnung, sobald der Akku das Limit erreicht. Bei 80–85 % aufzuhören schont den Akku spürbar.</string>
     <string name="limit_notify">Benachrichtigen</string>
     <string name="limit_notify_hint">Startet einen kleinen Offline-Monitor im Hintergrund.</string>
     <string name="limit_reached_banner">Limit %1$d %% erreicht — abstecken</string>
