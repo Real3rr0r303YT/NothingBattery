@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_charging">Lädt</string>
+    <string name="status_discharging">Entlädt</string>
+    <string name="status_full">Voll</string>
+    <string name="status_not_charging">Lädt nicht</string>
+    <string name="status_unknown">Unbekannt</string>
+
+    <string name="plug_ac">Netzteil</string>
+    <string name="plug_usb">USB</string>
+    <string name="plug_wireless">Kabellos</string>
+    <string name="plug_dock">Dock</string>
+    <string name="plug_none">Nicht angeschlossen</string>
+
+    <string name="health_good">Gut</string>
+    <string name="health_overheat">Überhitzt</string>
+    <string name="health_dead">Defekt</string>
+    <string name="health_over_voltage">Überspannung</string>
+    <string name="health_failure">Fehler</string>
+    <string name="health_cold">Kalt</string>
+    <string name="health_unknown">Unbekannt</string>
+
+    <string name="label_health">Zustand</string>
+    <string name="label_temperature">Temperatur</string>
+    <string name="label_voltage">Spannung</string>
+    <string name="label_current">Strom</string>
+    <string name="label_power">Leistung</string>
+    <string name="label_charge">Ladung</string>
+    <string name="label_capacity">Gesch. Kapazität</string>
+    <string name="label_cycles">Zyklen</string>
+    <string name="label_technology">Technologie</string>
+    <string name="label_current_history">Strom · letzte 60 s</string>
+
+    <string name="limit_title">Ladelimit</string>
+    <string name="limit_description">Warnung, sobald der Akku das Limit erreicht. Bei 80–85 % aufzuhören schont den Akku spürbar.</string>
+    <string name="limit_notify">Benachrichtigen</string>
+    <string name="limit_notify_hint">Startet einen kleinen Offline-Monitor im Hintergrund.</string>
+    <string name="limit_reached_banner">Limit %1$d %% erreicht — abstecken</string>
+    <string name="limit_approaching_banner">Limit %1$d %% fast erreicht</string>
+    <string name="limit_permission_denied">Benachrichtigungen sind blockiert. Erlaube sie in den Systemeinstellungen für Limit-Warnungen.</string>
+
+    <string name="offline_badge">Offline · Keine Internet-Berechtigung</string>
+    <string name="loading">Lese Akku…</string>
+
+    <string name="channel_monitor_name">Akku-Monitor</string>
+    <string name="channel_monitor_desc">Dauerhafte, stille Benachrichtigung, solange der Ladeschutz aktiv ist.</string>
+    <string name="channel_alert_name">Ladelimit-Warnungen</string>
+    <string name="channel_alert_desc">Warnt, wenn der Akku dein Ladelimit erreicht.</string>
+    <string name="notif_monitor_title">Ladeschutz aktiv · Limit %1$d %%</string>
+    <string name="notif_alert_title">Ladelimit erreicht: %1$d %%</string>
+    <string name="notif_alert_text">Jetzt abstecken, um den Akku zu schonen.</string>
+</resources>

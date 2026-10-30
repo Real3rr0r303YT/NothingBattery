@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">NothingBattery</string>
+    <string name="brand_made_by" translatable="false">MADE BY REAL3RR0R303YT</string>
+
+    <!-- Status -->
+    <string name="status_charging">Charging</string>
+    <string name="status_discharging">Discharging</string>
+    <string name="status_full">Full</string>
+    <string name="status_not_charging">Not charging</string>
+    <string name="status_unknown">Unknown</string>
+
+    <string name="plug_ac">AC</string>
+    <string name="plug_usb">USB</string>
+    <string name="plug_wireless">Wireless</string>
+    <string name="plug_dock">Dock</string>
+    <string name="plug_none">Unplugged</string>
+
+    <!-- Health -->
+    <string name="health_good">Good</string>
+    <string name="health_overheat">Overheat</string>
+    <string name="health_dead">Dead</string>
+    <string name="health_over_voltage">Over voltage</string>
+    <string name="health_failure">Failure</string>
+    <string name="health_cold">Cold</string>
+    <string name="health_unknown">Unknown</string>
+
+    <!-- Tiles -->
+    <string name="label_health">Health</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_voltage">Voltage</string>
+    <string name="label_current">Current</string>
+    <string name="label_power">Power</string>
+    <string name="label_charge">Charge</string>
+    <string name="label_capacity">Est. capacity</string>
+    <string name="label_cycles">Cycles</string>
+    <string name="label_technology">Technology</string>
+    <string name="label_current_history">Current · last 60 s</string>
+    <string name="value_na" translatable="false">—</string>
+
+    <!-- Charge limit -->
+    <string name="limit_title">Charge limit</string>
+    <string name="limit_description">Get warned when the battery reaches the limit. Stopping at 80–85 % noticeably reduces battery wear.</string>
+    <string name="limit_notify">Notify me</string>
+    <string name="limit_notify_hint">Runs a small offline monitor in the background.</string>
+    <string name="limit_reached_banner">Limit %1$d %% reached — unplug</string>
+    <string name="limit_approaching_banner">Approaching limit %1$d %%</string>
+    <string name="limit_permission_denied">Notifications are blocked. Allow them in system settings to get limit alerts.</string>
+
+    <string name="offline_badge">Offline · No internet permission</string>
+    <string name="loading">Reading battery…</string>
+
+    <!-- Notifications -->
+    <string name="channel_monitor_name">Battery monitor</string>
+    <string name="channel_monitor_desc">Persistent, silent notification while the charge guard is active.</string>
+    <string name="channel_alert_name">Charge limit alerts</string>
+    <string name="channel_alert_desc">Alerts when the battery reaches your charge limit.</string>
+    <string name="notif_monitor_title">Charge guard active · limit %1$d %%</string>
+    <string name="notif_alert_title">Charge limit reached: %1$d %%</string>
+    <string name="notif_alert_text">Unplug now to protect your battery.</string>
+</resources>
