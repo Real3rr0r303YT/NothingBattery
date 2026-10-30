@@ -60,7 +60,13 @@
     <string name="notif_alert_text">Unplug now to protect your battery.</string>
     <!-- About -->
     <string name="about_title">About</string>
-    <string name="about_license">Free and open-source software, licensed under the GNU GPL v3.0. Made by Real3rr0r303YT.</string>
+    <string name="about_license">NothingBattery is free software: you can redistribute and/or modify it under the terms of the GNU General Public License v3.0. It comes with ABSOLUTELY NO WARRANTY. Made by Real3rr0r303YT.</string>
+    <string name="about_view_license">GNU GPL-3.0 license</string>
     <string name="about_support">Buy me a coffee</string>
     <string name="about_source">Source code</string>
+    <!-- License -->
+    <string name="license_title" translatable="false">GNU GPL-3.0</string>
+    <string name="license_summary">NothingBattery · Copyright (C) 2026 Real3rr0r303YT. Licensed under the GNU General Public License version 3. Full text below.</string>
+    <string name="license_close">Close</string>
+    <string name="license_online">Open on gnu.org</string>
 </resources>

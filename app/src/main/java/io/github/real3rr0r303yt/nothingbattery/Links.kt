@@ -13,7 +13,8 @@ import android.net.Uri
  * still has no INTERNET permission and never makes a network request.
  */
 object Links {
-    const val BUY_ME_A_COFFEE = "https://buymeacoffee.com/Real3rr0r303YT"
+    const val BUY_ME_A_COFFEE = "https://buymeacoffee.com/3rr0r303YT"
+    const val GPL_3_0 = "https://www.gnu.org/licenses/gpl-3.0.html"
     const val SOURCE_CODE = "https://github.com/Real3rr0r303YT/NothingBattery"
 
     fun open(context: Context, url: String) {

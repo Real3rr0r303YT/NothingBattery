@@ -50,7 +50,11 @@
     <string name="notif_alert_title">Ladelimit erreicht: %1$d %%</string>
     <string name="notif_alert_text">Jetzt abstecken, um den Akku zu schonen.</string>
     <string name="about_title">Info</string>
-    <string name="about_license">Freie Open-Source-Software, lizenziert unter der GNU GPL v3.0. Made by Real3rr0r303YT.</string>
+    <string name="about_license">NothingBattery ist freie Software: Du darfst sie unter den Bedingungen der GNU General Public License v3.0 weitergeben und/oder verändern. Sie wird OHNE JEDE GEWÄHRLEISTUNG bereitgestellt. Made by Real3rr0r303YT.</string>
+    <string name="about_view_license">GNU GPL-3.0 Lizenz</string>
     <string name="about_support">Kaffee spendieren</string>
     <string name="about_source">Quellcode</string>
+    <string name="license_summary">NothingBattery · Copyright (C) 2026 Real3rr0r303YT. Lizenziert unter der GNU General Public License Version 3. Vollständiger Text unten (englisches Original, rechtlich verbindlich).</string>
+    <string name="license_close">Schließen</string>
+    <string name="license_online">Auf gnu.org öffnen</string>
 </resources>

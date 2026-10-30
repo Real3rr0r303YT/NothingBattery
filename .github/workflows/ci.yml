@@ -29,6 +29,9 @@ jobs:
       # Also validates the Gradle wrapper checksum.
       - uses: gradle/actions/setup-gradle@v4
 
+      - name: Verify bundled license matches LICENSE
+        run: cmp LICENSE app/src/main/assets/LICENSE
+
       - name: Unit tests
         run: ./gradlew --no-daemon testDebugUnitTest
 
