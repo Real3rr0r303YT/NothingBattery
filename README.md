@@ -61,7 +61,7 @@ Permissions used: `POST_NOTIFICATIONS`, `FOREGROUND_SERVICE`, `FOREGROUND_SERVIC
 | Workflow | Trigger | What it does |
 |---|---|---|
 | `ci.yml` | every push / PR | unit tests, lint, debug APK, offline-permission check, uploads APK artifact |
-| `release.yml` | tag `v*` (e.g. `v0.1.0`) | verifies tag = `versionName`, builds a **signed** release APK, verifies signature + permissions, publishes a GitHub Release with APK and SHA-256 |
+| `release.yml` | tag `v*` (e.g. `v0.1.0`) or manual *Run workflow* (creates the tag) | verifies tag = `versionName`, builds a **signed** release APK, verifies signature + permissions, publishes a GitHub Release with APK and SHA-256 |
 
 ### Signing
 
