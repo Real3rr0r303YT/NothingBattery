@@ -26,6 +26,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -57,6 +58,7 @@ import io.github.real3rr0r303yt.nothingbattery.ui.components.DotGraph
 import io.github.real3rr0r303yt.nothingbattery.ui.components.DotMatrixText
 import io.github.real3rr0r303yt.nothingbattery.ui.components.DotRing
 import io.github.real3rr0r303yt.nothingbattery.ui.components.Label
+import io.github.real3rr0r303yt.nothingbattery.ui.components.LicenseDialog
 import io.github.real3rr0r303yt.nothingbattery.ui.components.LinkChip
 import io.github.real3rr0r303yt.nothingbattery.ui.components.NothingSwitch
 import io.github.real3rr0r303yt.nothingbattery.ui.components.Panel
@@ -264,16 +266,25 @@ private fun ChargeLimitPanel(
 @Composable
 private fun AboutPanel() {
     val context = LocalContext.current
+    var showLicense by remember { mutableStateOf(false) }
     Panel(Modifier.fillMaxWidth()) {
         Label(stringResource(R.string.about_title), color = NothingColors.White)
+        Spacer(Modifier.height(12.dp))
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(Modifier.size(6.dp).background(NothingColors.Red, CircleShape))
+            Spacer(Modifier.size(8.dp))
+            Label(stringResource(R.string.license_title), color = NothingColors.Red)
+        }
         Spacer(Modifier.height(8.dp))
         Text(stringResource(R.string.about_license), color = NothingColors.Muted, style = NothingType.Body)
         Spacer(Modifier.height(16.dp))
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            LinkChip(stringResource(R.string.about_view_license)) { showLicense = true }
             LinkChip(stringResource(R.string.about_support)) { Links.open(context, Links.BUY_ME_A_COFFEE) }
             LinkChip(stringResource(R.string.about_source)) { Links.open(context, Links.SOURCE_CODE) }
         }
     }
+    if (showLicense) LicenseDialog(onDismiss = { showLicense = false })
 }
 
 @Composable
