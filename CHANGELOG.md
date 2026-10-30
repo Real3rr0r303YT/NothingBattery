@@ -15,6 +15,9 @@ All notable changes to this project are documented here. The format follows
   unplugging; restored after reboot.
 - Nothing-OS-inspired dashboard: pure black, white and red, hand-drawn 5×7 dot-matrix
   digits, dot ring gauge and a 60-second dot-matrix current graph.
+- About section with GPL-3.0 notice, *Buy me a coffee* and *Source code* links (opened in
+  the external browser; the app still has no INTERNET permission).
 - English and German translations.
 - GitHub Actions: CI (unit tests, lint, debug APK, offline-permission check) and tag-driven
   signed release builds.
+- Licensed under GPL-3.0 with SPDX headers in all source files. Made by Real3rr0r303YT.

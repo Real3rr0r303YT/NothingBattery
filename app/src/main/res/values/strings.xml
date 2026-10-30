@@ -58,4 +58,9 @@
     <string name="notif_monitor_title">Charge guard active · limit %1$d %%</string>
     <string name="notif_alert_title">Charge limit reached: %1$d %%</string>
     <string name="notif_alert_text">Unplug now to protect your battery.</string>
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_license">Free and open-source software, licensed under the GNU GPL v3.0. Made by Real3rr0r303YT.</string>
+    <string name="about_support">Buy me a coffee</string>
+    <string name="about_source">Source code</string>
 </resources>

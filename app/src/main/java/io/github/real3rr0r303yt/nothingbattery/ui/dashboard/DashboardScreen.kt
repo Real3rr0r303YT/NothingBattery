@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Real3rr0r303YT — NothingBattery. Made by Real3rr0r303YT.
+
 package io.github.real3rr0r303yt.nothingbattery.ui.dashboard
 
 import android.Manifest
@@ -40,6 +43,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import io.github.real3rr0r303yt.nothingbattery.BuildConfig
+import io.github.real3rr0r303yt.nothingbattery.Links
 import io.github.real3rr0r303yt.nothingbattery.R
 import io.github.real3rr0r303yt.nothingbattery.battery.BatteryHealth
 import io.github.real3rr0r303yt.nothingbattery.battery.BatteryState
@@ -53,6 +57,7 @@ import io.github.real3rr0r303yt.nothingbattery.ui.components.DotGraph
 import io.github.real3rr0r303yt.nothingbattery.ui.components.DotMatrixText
 import io.github.real3rr0r303yt.nothingbattery.ui.components.DotRing
 import io.github.real3rr0r303yt.nothingbattery.ui.components.Label
+import io.github.real3rr0r303yt.nothingbattery.ui.components.LinkChip
 import io.github.real3rr0r303yt.nothingbattery.ui.components.NothingSwitch
 import io.github.real3rr0r303yt.nothingbattery.ui.components.Panel
 import io.github.real3rr0r303yt.nothingbattery.ui.components.PulseDot
@@ -134,6 +139,7 @@ fun DashboardScreen(
                 }
             }
             ChargeLimitPanel(settings, permissionDenied, onLimitChange, onAlertsChange)
+            AboutPanel()
             Footer()
         }
     }
@@ -256,6 +262,21 @@ private fun ChargeLimitPanel(
 }
 
 @Composable
+private fun AboutPanel() {
+    val context = LocalContext.current
+    Panel(Modifier.fillMaxWidth()) {
+        Label(stringResource(R.string.about_title), color = NothingColors.White)
+        Spacer(Modifier.height(8.dp))
+        Text(stringResource(R.string.about_license), color = NothingColors.Muted, style = NothingType.Body)
+        Spacer(Modifier.height(16.dp))
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            LinkChip(stringResource(R.string.about_support)) { Links.open(context, Links.BUY_ME_A_COFFEE) }
+            LinkChip(stringResource(R.string.about_source)) { Links.open(context, Links.SOURCE_CODE) }
+        }
+    }
+}
+
+@Composable
 private fun Footer() {
     Column(
         Modifier.fillMaxWidth().padding(top = 12.dp, bottom = 8.dp),
@@ -263,7 +284,7 @@ private fun Footer() {
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         Label(stringResource(R.string.offline_badge))
-        Label(stringResource(R.string.brand_made_by) + " · v" + BuildConfig.VERSION_NAME, color = NothingColors.White)
+        Label(stringResource(R.string.brand_made_by) + " · v" + BuildConfig.VERSION_NAME + " · GPL-3.0", color = NothingColors.White)
     }
 }
 

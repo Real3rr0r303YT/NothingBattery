@@ -1,9 +1,19 @@
+<!--
+  NothingBattery — offline battery monitor for Android in Nothing OS style.
+  Copyright (C) 2026 Real3rr0r303YT. Made by Real3rr0r303YT.
+  SPDX-License-Identifier: GPL-3.0-only
+-->
+
 # NothingBattery
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-red.svg)](LICENSE)
+[![CI](https://github.com/Real3rr0r303YT/NothingBattery/actions/workflows/ci.yml/badge.svg)](https://github.com/Real3rr0r303YT/NothingBattery/actions/workflows/ci.yml)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support-white?logo=buymeacoffee&logoColor=black&labelColor=white&color=D71921)](https://buymeacoffee.com/Real3rr0r303YT)
 
 A minimalist, **100 % offline** battery monitor for Android in the Nothing OS design language —
 deep black, pure white, red accents and dot-matrix type.
 
-**Made by Real3rr0r303YT** · License: GPL-3.0
+**Made by Real3rr0r303YT** · Licensed under the [GNU GPL v3.0](LICENSE)
 
 ## Features (v0.1.0)
 
@@ -17,6 +27,8 @@ deep black, pure white, red accents and dot-matrix type.
     charging session, re-armed after unplugging, restored after reboot
 - **Dot-matrix dashboard** — hand-drawn 5×7 dot font (no bundled or downloaded fonts),
   dot ring gauge and a 60-second current graph
+- **About section** with license info and unobtrusive *Buy me a coffee* / *Source code* links
+  (opened in your browser — the app itself never touches the network)
 - English and German UI
 
 ## Privacy / OpSec
@@ -100,7 +112,44 @@ treats values with magnitude ≥ 10 000 as µA and smaller ones as mA. Positive 
 battery is charging. Estimated capacity is extrapolated from the charge counter and is only shown
 above 20 %.
 
+## Support
+
+NothingBattery is free, has no ads and no tracking — and it will stay that way.
+If it helps you keep your battery healthy, you can support the development:
+
+<a href="https://buymeacoffee.com/Real3rr0r303YT"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-D71921?style=for-the-badge&labelColor=000000" alt="Buy Me a Coffee"></a>
+
+**→ [buymeacoffee.com/Real3rr0r303YT](https://buymeacoffee.com/Real3rr0r303YT)**
+
+Starring the repo, reporting bugs and sending pull requests helps just as much.
+
+## License
+
+```
+NothingBattery
+Copyright (C) 2026 Real3rr0r303YT
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+The full license text is in [`LICENSE`](LICENSE). Every source file carries an
+`SPDX-License-Identifier: GPL-3.0-only` header.
+
 ## Disclaimer
 
 NothingBattery is an independent open-source project and is not affiliated with or endorsed by
 Nothing Technology Limited.
+
+---
+
+<p align="center"><b>Made by Real3rr0r303YT</b></p>

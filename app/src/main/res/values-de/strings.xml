@@ -49,4 +49,8 @@
     <string name="notif_monitor_title">Ladeschutz aktiv · Limit %1$d %%</string>
     <string name="notif_alert_title">Ladelimit erreicht: %1$d %%</string>
     <string name="notif_alert_text">Jetzt abstecken, um den Akku zu schonen.</string>
+    <string name="about_title">Info</string>
+    <string name="about_license">Freie Open-Source-Software, lizenziert unter der GNU GPL v3.0. Made by Real3rr0r303YT.</string>
+    <string name="about_support">Kaffee spendieren</string>
+    <string name="about_source">Quellcode</string>
 </resources>
