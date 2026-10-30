@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Real3rr0r303YT — NothingBattery. Made by Real3rr0r303YT.
+
 package io.github.real3rr0r303yt.nothingbattery.ui.components
 
 import androidx.compose.foundation.Canvas

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Real3rr0r303YT — NothingBattery. Made by Real3rr0r303YT.
 # Fails if an APK requests any network-related permission. NothingBattery must stay 100 % offline.
 set -euo pipefail
 
