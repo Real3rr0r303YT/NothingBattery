@@ -60,6 +60,9 @@ jobs:
           cp "$apk" "dist/NothingBattery-v$VERSION.apk"
           (cd dist && sha256sum "NothingBattery-v$VERSION.apk" > "NothingBattery-v$VERSION.apk.sha256")
 
+      - name: Build root module (Magisk / KernelSU / APatch)
+        run: bash module/build.sh app/build/outputs/apk/release/app-release.apk app dist
+
       - name: Extract changelog section
         run: |
           awk -v v="$VERSION" '
@@ -76,6 +79,7 @@ jobs:
           files: |
             dist/NothingBattery-v${{ env.VERSION }}.apk
             dist/NothingBattery-v${{ env.VERSION }}.apk.sha256
+            dist/NothingBattery-v${{ env.VERSION }}-module.zip
 
       - name: Remove keystore
         if: always()
