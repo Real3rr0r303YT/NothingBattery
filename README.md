@@ -91,7 +91,8 @@ git tag v0.1.0 && git push origin v0.1.0
 
 To sign locally, export `NB_KEYSTORE_PATH`, `NB_KEYSTORE_PASSWORD`, `NB_KEY_ALIAS` and
 `NB_KEY_PASSWORD` before running `./gradlew assembleRelease`. Without them the release APK is
-built unsigned.
+signed with the debug key, locally and in the release workflow. Updates from a debug-signed
+build to a release-signed build require reinstalling the app.
 
 ## Project structure
 

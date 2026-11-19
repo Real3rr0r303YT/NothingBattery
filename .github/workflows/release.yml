@@ -41,7 +41,10 @@ jobs:
       - name: Decode signing keystore
         run: |
           for v in NB_KEYSTORE_BASE64 NB_KEYSTORE_PASSWORD NB_KEY_ALIAS NB_KEY_PASSWORD; do
-            if [ -z "${!v}" ]; then echo "::error::Missing repository secret $v (see README → Signing)"; exit 1; fi
+            if [ -z "${!v}" ]; then
+              echo "::warning::Repository secret $v is missing, signing the release APK with the debug key (see README → Signing)"
+              exit 0
+            fi
           done
           echo "$NB_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/release.jks"
           echo "NB_KEYSTORE_PATH=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
