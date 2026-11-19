@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Real3rr0r303YT — NothingBattery. Made by Real3rr0r303YT.
+
 package io.github.real3rr0r303yt.nothingbattery.ui.components
 
 import androidx.compose.animation.core.RepeatMode
@@ -123,6 +126,20 @@ fun <T> Segmented(
                 )
             }
         }
+    }
+}
+
+/** Small outlined pill used for unobtrusive outbound links (support, source code). */
+@Composable
+fun LinkChip(text: String, onClick: () -> Unit) {
+    Box(
+        Modifier
+            .border(1.dp, NothingColors.Outline, CircleShape)
+            .clickable(role = Role.Button, onClick = onClick)
+            .padding(horizontal = 16.dp, vertical = 10.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(text.uppercase(), color = NothingColors.White, style = NothingType.Label)
     }
 }
 
