@@ -43,6 +43,22 @@
                 android:value="Local battery monitoring: warns the user when the charge limit (80/85 %) is reached. No network, no data leaves the device." />
         </service>
 
+        <!-- Home screen widget: battery ring -->
+        <receiver
+            android:name=".widget.BatteryWidget"
+            android:exported="false"
+            android:label="@string/widget_battery_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_battery_info" />
+        </receiver>
+
         <receiver
             android:name=".service.BootReceiver"
             android:exported="false">

@@ -10,6 +10,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import io.github.real3rr0r303yt.nothingbattery.ui.dashboard.DashboardRoute
 import io.github.real3rr0r303yt.nothingbattery.ui.theme.NothingBatteryTheme
+import io.github.real3rr0r303yt.nothingbattery.widget.BatteryWidget
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,5 +24,10 @@ class MainActivity : ComponentActivity() {
                 DashboardRoute()
             }
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        BatteryWidget.updateAll(this)
     }
 }

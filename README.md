@@ -27,6 +27,8 @@ deep black, pure white, red accents and dot-matrix type.
     charging session, re-armed after unplugging, restored after reboot
 - **Dot-matrix dashboard** — hand-drawn 5×7 dot font (no bundled or downloaded fonts),
   dot ring gauge and a 60-second current graph
+- **Home screen widget** — battery level as a 40-dot ring with the percentage in dot-matrix digits,
+  status and charge limit; red when low. Refreshes without waking the phone.
 - **About section** with GPL-3.0 notice, built-in offline license viewer and unobtrusive
   *Buy me a coffee* / *Source code* links (opened in your browser — the app itself never
   touches the network)

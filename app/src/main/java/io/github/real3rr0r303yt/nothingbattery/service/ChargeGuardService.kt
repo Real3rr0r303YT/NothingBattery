@@ -14,6 +14,7 @@ import io.github.real3rr0r303yt.nothingbattery.battery.BatteryMonitor
 import io.github.real3rr0r303yt.nothingbattery.battery.ChargeStatus
 import io.github.real3rr0r303yt.nothingbattery.battery.ChargeLimitPolicy
 import io.github.real3rr0r303yt.nothingbattery.settings.SettingsStore
+import io.github.real3rr0r303yt.nothingbattery.widget.BatteryWidget
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -58,6 +59,7 @@ class ChargeGuardService : Service() {
                 if (key != lastKey) {
                     lastKey = key
                     Notifications.updateMonitor(this@ChargeGuardService, s.chargeLimit, battery)
+                    BatteryWidget.updateAll(this@ChargeGuardService)
                 }
             }
         }

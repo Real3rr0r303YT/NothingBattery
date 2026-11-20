@@ -57,4 +57,7 @@
     <string name="license_summary">NothingBattery · Copyright (C) 2026 Real3rr0r303YT. Lizenziert unter der GNU General Public License Version 3. Vollständiger Text unten (englisches Original, rechtlich verbindlich).</string>
     <string name="license_close">Schließen</string>
     <string name="license_online">Auf gnu.org öffnen</string>
+    <!-- Widget -->
+    <string name="widget_battery_name">Akku</string>
+    <string name="widget_battery_desc">Akkustand als Punktring mit Status und Ladegrenze</string>
 </resources>
